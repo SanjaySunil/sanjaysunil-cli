@@ -1,7 +1,7 @@
 <!-- Logo -->
 <p align="center">
   <a href="https://github.com/D3VSJ/SanjaySunil-CLI">
-    <img style="border-radius: 50%" src="https://avatars0.githubusercontent.com/u/45319920?s=400&u=67bd581942a2a290bf72902b1a6cd05de83fb04a&v=4" alt="Logo" width="100" height="100">
+    <img src="https://avatars0.githubusercontent.com/u/45319920?s=400&u=67bd581942a2a290bf72902b1a6cd05de83fb04a&v=4" alt="Logo" width="100" height="100">
   </a>
 </p>
 
