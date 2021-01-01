@@ -1,18 +1,29 @@
 {
   "name": "sanjaysunil",
-  "version": "1.1.1",
+  "version": "1.1.3",
   "description": "Me in a CLI.",
+  "license": "MIT",
+  "repository": "D3VSJ/SanjaySunil-CLI",
   "main": "index.js",
+  "author": {
+		"name": "Sanjay Sunil",
+		"email": "D3VSJ@protonmail.com",
+		"url": "https://sanjaysunil.me"
+  },
+  "keywords": [
+      "sanjaysunil",
+      "d3vsj",
+      "sanjaysunil cli",
+      "sanjay",
+      "cli"
+  ],
   "scripts": {
     "start": "node index.js"
   },
-  "author": "D3VSJ",
-  "license": "MIT",
   "bin": {
     "sanjaysunil": "index.js"
   },
   "dependencies": {
-    "chalk": "^4.1.0",
     "open": "^7.3.0",
     "simple-terminal-menu": "^2.0.0"
   }
