@@ -42,7 +42,9 @@ npm install sanjaysunil -g
 ```
 2. Run CLI app anywhere in your terminal!
 ```sh
-npx sanjaysunil``` or 
+npx sanjaysunil
+``` 
+or 
 ```sh
 npm run sanjaysunil
 ```
