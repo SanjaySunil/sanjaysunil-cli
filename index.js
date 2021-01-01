@@ -45,7 +45,7 @@ const aboutMe = () => {
     x: 1, 
     y: 1,
     fg: "white", 
-    bg: "none", 
+    bg: "black", 
     padding: {
       left: 3, 
       right: 3, 
