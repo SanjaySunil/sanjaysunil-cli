@@ -19,40 +19,50 @@
 <br/>
 
 <!-- Information -->
+
 ## What's SanjaySunil-CLI?
 
-<a href="" target="_blank">SanjaySunil-CLI</a> is a small CLI app made with node published on NPM. I made this CLI app to test npm package publishing and just for fun!
+<a href="https://www.npmjs.com/package/sanjaysunil" target="_blank">SanjaySunil-CLI</a> is a small CLI app made with node published on NPM. I made this CLI app to test npm package publishing and just for fun!
 <br/>
 
 <!-- Prerequisites -->
-### **Step 1:** Prerequisites 
 
-* NPM
+### **Step 1:** Prerequisites
+
+- NPM
+
 ```
 npm install npm@latest -g
 ```
+
 <br/>
 
 <!-- Installation -->
+
 ### **Step 2:** Setup / Installation
 
 1. Install SanjaySunil-CLI globally.
+
 ```sh
 npm install sanjaysunil -g
 ```
+
 2. Run CLI app anywhere in your terminal!
+
 ```sh
 npx sanjaysunil
-``` 
-or 
+```
+
+or
+
 ```sh
 npm run sanjaysunil
 ```
+
 <br/>
 
 ## License
 
-Copyright © 2020 Sanjay Sunil (D3VSJ@protonmail.com)
+Copyright © 2020 Sanjay Sunil (sanjaysunil@protonmail.com)
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
