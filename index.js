@@ -5,87 +5,31 @@
  * @author Sanjay Sunil
  */
 
-const TerminalMenu = require("simple-terminal-menu");
-const open = require("open");
-
-/**
- * @description Open GitHub
- */
+const TerminalMenu = require('simple-terminal-menu');
+const open = require('open');
 
 const openGitHub = () => {
-  open("https://github.com/D3VSJ");
+  open('https://github.com/sanjaysunil');
   mainMenu();
-}
-
-/**
- * @description Open Website
- */
+};
 
 const openWebsite = () => {
-  open("https://sanjaysunil.me");
+  open('https://sanjaysunil.me');
   mainMenu();
-}
-
-/**
- * @description Open Contact
- */
+};
 
 const openContact = () => {
-  open("mailto:D3VSJ@protonmail.com");
+  open('mailto:sanjaysunil@protonmail.com');
   mainMenu();
-}
-
-/**
- * @description About Me
- */
+};
 
 const aboutMe = () => {
   const menu = new TerminalMenu({
     width: 80,
-    x: 1, 
-    y: 1,
-    fg: "white", 
-    bg: "black", 
-    padding: {
-      left: 3, 
-      right: 3, 
-      top: 3, 
-      bottom: 3,
-    },
-    selected: 0, 
-  });
-
-  /**
-   * @description If the terminal is not interactive, this is displayed.
-   */
-
-  if (menu === null) {
-    console.log("Terminal is not interactive.");
-    return;
-  }
-
-  menu.writeLine("SanjaySunil CLI", "https://sanjaysunil.me");
-  menu.writeSeparator();
-  menu.writeLine(
-    "Hey! I'm a 14y/o student developer studying Computer Science and specializing"
-  );
-  menu.writeLine("in full-stack development.");
-  menu.writeSeparator();
-  menu.add("Go Back", mainMenu);
-  menu.add("Exit", menu.close);
-}
-
-/**
- * @description Main Menu
- */
-
-const mainMenu = () => {
-  const menu = new TerminalMenu({
-    width: 80,
     x: 1,
     y: 1,
-    fg: "white",
-    bg: "black",
+    fg: 'white',
+    bg: 'black',
     padding: {
       left: 3,
       right: 3,
@@ -95,23 +39,49 @@ const mainMenu = () => {
     selected: 0,
   });
 
-  /**
-   * @description If the terminal is not interactive, this is displayed.
-   */
-
   if (menu === null) {
-    console.log("Terminal is not interactive.");
+    console.log('Terminal is not interactive.');
     return;
   }
 
-  menu.writeLine("SanjaySunil CLI", "https://sanjaysunil.me");
+  menu.writeLine('SanjaySunil CLI', 'https://sanjaysunil.me');
   menu.writeSeparator();
-  menu.add("About Me", aboutMe);
-  menu.add("Website", openWebsite);
-  menu.add("GitHub", openGitHub);
+  menu.writeLine('Hey! I\'m a 14y/o student developer studying Computer Science and specializing');
+  menu.writeLine('in full-stack development.');
   menu.writeSeparator();
-  menu.add("Contact", openContact);
-  menu.add("Exit", menu.close);
-}
+  menu.add('Go Back', mainMenu);
+  menu.add('Exit', menu.close);
+};
+
+const mainMenu = () => {
+  const menu = new TerminalMenu({
+    width: 80,
+    x: 1,
+    y: 1,
+    fg: 'white',
+    bg: 'black',
+    padding: {
+      left: 3,
+      right: 3,
+      top: 3,
+      bottom: 3,
+    },
+    selected: 0,
+  });
+
+  if (menu === null) {
+    console.log('Terminal is not interactive.');
+    return;
+  }
+
+  menu.writeLine('SanjaySunil CLI', 'https://sanjaysunil.me');
+  menu.writeSeparator();
+  menu.add('About Me', aboutMe);
+  menu.add('Website', openWebsite);
+  menu.add('GitHub', openGitHub);
+  menu.writeSeparator();
+  menu.add('Contact', openContact);
+  menu.add('Exit', menu.close);
+};
 
 mainMenu();

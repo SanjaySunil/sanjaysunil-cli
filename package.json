@@ -1,21 +1,21 @@
 {
   "name": "sanjaysunil",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Me in a CLI.",
   "license": "MIT",
   "repository": "D3VSJ/SanjaySunil-CLI",
   "main": "index.js",
   "author": {
-		"name": "Sanjay Sunil",
-		"email": "D3VSJ@protonmail.com",
-		"url": "https://sanjaysunil.me"
+    "name": "Sanjay Sunil",
+    "email": "D3VSJ@protonmail.com",
+    "url": "https://sanjaysunil.me"
   },
   "keywords": [
-      "sanjaysunil",
-      "d3vsj",
-      "sanjaysunil cli",
-      "sanjay",
-      "cli"
+    "sanjaysunil",
+    "d3vsj",
+    "sanjaysunil cli",
+    "sanjay",
+    "cli"
   ],
   "scripts": {
     "start": "node index.js"
@@ -26,5 +26,9 @@
   "dependencies": {
     "open": "^7.3.0",
     "simple-terminal-menu": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.19.0",
+    "eslint-config-google": "^0.14.0"
   }
 }
