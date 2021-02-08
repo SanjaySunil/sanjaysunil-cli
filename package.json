@@ -3,16 +3,15 @@
   "version": "1.1.5",
   "description": "Me in a CLI.",
   "license": "MIT",
-  "repository": "D3VSJ/SanjaySunil-CLI",
+  "repository": "sanjaysunil/SanjaySunil-CLI",
   "main": "index.js",
   "author": {
     "name": "Sanjay Sunil",
-    "email": "D3VSJ@protonmail.com",
+    "email": "sanjaysunil@protonmail.com",
     "url": "https://sanjaysunil.me"
   },
   "keywords": [
     "sanjaysunil",
-    "d3vsj",
     "sanjaysunil cli",
     "sanjay",
     "cli"
