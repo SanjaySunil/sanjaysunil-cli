@@ -23,7 +23,7 @@
     "sanjaysunil": "index.js"
   },
   "dependencies": {
-    "open": "^7.3.0",
+    "open": "^8.0.1",
     "simple-terminal-menu": "^2.0.0"
   },
   "devDependencies": {
