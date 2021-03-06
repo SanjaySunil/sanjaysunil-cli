@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 /**
  * @file index.js
- * @description Me in a CLI.
  * @author Sanjay Sunil
+ * @license MIT
  */
 
 const TerminalMenu = require('simple-terminal-menu');
@@ -46,8 +46,12 @@ const aboutMe = () => {
 
   menu.writeLine('SanjaySunil CLI', 'https://sanjaysunil.me');
   menu.writeSeparator();
-  menu.writeLine('Hey! I\'m a 14y/o student developer studying Computer Science and specializing');
-  menu.writeLine('in full-stack development.');
+  menu.writeLine('Hey! I\'m a student developer studying Computer Science ');
+  menu.writeLine('and specializing in full-stack development.\n');
+  menu.writeLine('Some technologies I enjoy working with include React, Node and Firebase.\n');
+  menu.writeLine('I love creating software, exploring new technologies');
+  menu.writeLine('and spending my free time contributing to the open-source community.');
+
   menu.writeSeparator();
   menu.add('Go Back', mainMenu);
   menu.add('Exit', menu.close);
