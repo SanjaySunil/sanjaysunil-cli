@@ -1,7 +1,7 @@
 <!-- Title -->
 <h1 align="center">SanjaySunil-CLI</h1>
   <p align="center">
-    Me in a CLI.
+    The Sanjay Sunil CLI
   </p>
 </h1>
 <br/><br/>
@@ -22,7 +22,7 @@
 
 ## What's SanjaySunil-CLI?
 
-<a href="https://www.npmjs.com/package/sanjaysunil" target="_blank">SanjaySunil-CLI</a> is a small CLI app made with node published on NPM. I made this CLI app to test npm package publishing and just for fun!
+<a href="https://www.npmjs.com/package/sanjaysunil" target="_blank">SanjaySunil-CLI</a> is a small CLI made with node and published on npm.
 <br/>
 
 <!-- Prerequisites -->
@@ -63,6 +63,6 @@ npm run sanjaysunil
 
 ## License
 
-Copyright © 2020 Sanjay Sunil (sanjaysunil@protonmail.com)
+Copyright © 2022 Sanjay Sunil (sanjaysunil@protonmail.com)
 
 Distributed under the MIT License. See `LICENSE` for more information.
