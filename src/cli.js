@@ -5,9 +5,9 @@
  * @license MIT
  */
 
-const TerminalMenu = require("simple-terminal-menu");
-const open = require("open");
-const locales = require("./en_GB.json");
+const TerminalMenu = require('simple-terminal-menu');
+const open = require('open');
+const locales = require('./en_GB.json');
 
 const openGitHub = () => {
   open(locales.github);
@@ -29,8 +29,8 @@ const aboutMe = () => {
     width: 80,
     x: 1,
     y: 1,
-    fg: "white",
-    bg: "black",
+    fg: 'white',
+    bg: 'black',
     padding: {
       left: 3,
       right: 3,
@@ -41,7 +41,7 @@ const aboutMe = () => {
   });
 
   if (menu === null) {
-    console.log("Terminal is not interactive.");
+    console.log('Terminal is not interactive.');
     return;
   }
 
@@ -52,8 +52,8 @@ const aboutMe = () => {
   });
 
   menu.writeSeparator();
-  menu.add("Go Back", mainMenu);
-  menu.add("Exit", menu.close);
+  menu.add('Go Back', mainMenu);
+  menu.add('Exit', menu.close);
 };
 
 const mainMenu = () => {
@@ -61,8 +61,8 @@ const mainMenu = () => {
     width: 80,
     x: 1,
     y: 1,
-    fg: "white",
-    bg: "black",
+    fg: 'white',
+    bg: 'black',
     padding: {
       left: 3,
       right: 3,
@@ -73,18 +73,18 @@ const mainMenu = () => {
   });
 
   if (menu === null) {
-    console.log("Terminal is not interactive.");
+    console.log('Terminal is not interactive.');
     return;
   }
 
   menu.writeLine(locales.title, locales.website);
   menu.writeSeparator();
-  menu.add("About Me", aboutMe);
-  menu.add("Website", openWebsite);
-  menu.add("GitHub", openGitHub);
+  menu.add('About Me', aboutMe);
+  menu.add('Website', openWebsite);
+  menu.add('GitHub', openGitHub);
   menu.writeSeparator();
-  menu.add("Contact", openContact);
-  menu.add("Exit", menu.close);
+  menu.add('Contact', openContact);
+  menu.add('Exit', menu.close);
 };
 
 mainMenu();

@@ -17,7 +17,8 @@
     "cli"
   ],
   "scripts": {
-    "start": "node src/cli.js"
+    "start": "node src/cli.js",
+    "lint": "npx eslint . --fix"
   },
   "bin": {
     "sanjaysunil": "src/cli.js"
