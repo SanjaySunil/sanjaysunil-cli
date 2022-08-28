@@ -4,11 +4,11 @@
   "description": "Me in a CLI.",
   "license": "MIT",
   "repository": "sanjaysunil/SanjaySunil-CLI",
-  "main": "index.js",
+  "main": "./src/cli.js",
   "author": {
     "name": "Sanjay Sunil",
     "email": "sanjaysunil@protonmail.com",
-    "url": "https://sanjaysunil.me"
+    "url": "https://sanjaysunil.net"
   },
   "keywords": [
     "sanjaysunil",
@@ -17,10 +17,10 @@
     "cli"
   ],
   "scripts": {
-    "start": "node index.js"
+    "start": "node src/cli.js"
   },
   "bin": {
-    "sanjaysunil": "index.js"
+    "sanjaysunil": "src/cli.js"
   },
   "dependencies": {
     "open": "^8.0.1",

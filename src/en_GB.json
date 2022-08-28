@@ -1,0 +1,12 @@
+{
+  "title": "Hi, I'm Sanjay",
+  "website": "https://sanjaysunil.net",
+  "github": "https://github.com/sanjaysunil",
+  "email": "sanjaysunil@protonmail.com",
+  "about": [
+    "Hey! I'm an a-level computer science student.",
+    "Some technologies I enjoy working with include React, Node and Firebase.",
+    "I love creating software, exploring new technologies, and spending my free time",
+    "contributing to the open-source community."
+  ]
+}

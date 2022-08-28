@@ -7,19 +7,20 @@
 
 const TerminalMenu = require('simple-terminal-menu');
 const open = require('open');
+const locales = require('./en_GB.json');
 
 const openGitHub = () => {
-  open('https://github.com/sanjaysunil');
+  open(locales.github);
   mainMenu();
 };
 
 const openWebsite = () => {
-  open('https://sanjaysunil.me');
+  open(locales.website);
   mainMenu();
 };
 
 const openContact = () => {
-  open('mailto:sanjaysunil@protonmail.com');
+  open(`mailto:${locales.email}`);
   mainMenu();
 };
 
@@ -44,13 +45,11 @@ const aboutMe = () => {
     return;
   }
 
-  menu.writeLine('SanjaySunil CLI', 'https://sanjaysunil.me');
+  menu.writeLine(locales.title, locales.website);
   menu.writeSeparator();
-  menu.writeLine('Hey! I\'m a student developer studying Computer Science ');
-  menu.writeLine('and specializing in full-stack development.\n');
-  menu.writeLine('Some technologies I enjoy working with include React, Node and Firebase.\n');
-  menu.writeLine('I love creating software, exploring new technologies');
-  menu.writeLine('and spending my free time contributing to the open-source community.');
+  locales.about.forEach((message) => {
+    menu.writeLine(message);
+  });
 
   menu.writeSeparator();
   menu.add('Go Back', mainMenu);
@@ -78,7 +77,7 @@ const mainMenu = () => {
     return;
   }
 
-  menu.writeLine('SanjaySunil CLI', 'https://sanjaysunil.me');
+  menu.writeLine(locales.title, locales.website);
   menu.writeSeparator();
   menu.add('About Me', aboutMe);
   menu.add('Website', openWebsite);
