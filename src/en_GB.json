@@ -10,5 +10,8 @@
     "",
     "I love creating software, exploring new technologies, and spending my free time",
     "contributing to the open-source community."
-  ]
+  ],
+  "errors": {
+    "terminalNotInteractive": "Terminal is not interactive."
+  }
 }

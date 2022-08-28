@@ -41,7 +41,7 @@ const aboutMe = () => {
   });
 
   if (menu === null) {
-    console.log('Terminal is not interactive.');
+    console.log(locales.errors.terminalNotInteractive);
     return;
   }
 
