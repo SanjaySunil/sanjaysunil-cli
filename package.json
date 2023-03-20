@@ -24,7 +24,7 @@
     "sanjaysunil": "src/cli.js"
   },
   "dependencies": {
-    "open": "^8.0.1",
+    "open": "^9.0.0",
     "simple-terminal-menu": "^2.0.0"
   },
   "devDependencies": {
